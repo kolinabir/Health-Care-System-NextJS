@@ -43,7 +43,7 @@ const TopRatedDoctors = async () => {
         </Typography>
       </Box>
       <Container>
-        <Grid container spacing={2}>
+        <Grid mt={3} container spacing={2}>
           {doctors.map((doctor: any) => (
             <Grid item xs={12} sm={6} md={4} key={doctor.id}>
               <Box
@@ -137,6 +137,19 @@ const TopRatedDoctors = async () => {
               </Box>
             </Grid>
           ))}
+          <Box sx={{
+            mt: 5, 
+            mx: "auto"
+          }}>
+            <Button
+              variant="outlined"
+              sx={{
+                ml: 2,
+              }}
+            >
+              View All
+            </Button>
+          </Box>
         </Grid>
       </Container>
     </Box>
